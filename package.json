@@ -1,0 +1,55 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "YouTube-client",
+  "main": "src/index.js",
+  "scripts": {
+    "dev-server": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "lint": "eslint src/",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [
+    "YouTube",
+    "task",
+    "Rolling&Scopes"
+  ],
+  "browserslist": [
+    "> 1%",
+    "last 3 version"
+  ],
+  "author": "Sergey Xursevich",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "autoprefixer": "^9.5.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^4.12.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
