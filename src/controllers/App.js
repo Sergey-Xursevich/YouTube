@@ -193,22 +193,14 @@ export default class App {
         const res = this.onresize() / 0.9;
         document.querySelector('.slider').scrollBy(`${res}`, 0);
         const flag = 'plus';
-        // document.querySelector('.round').innerHTML = `${this.count += 1}`;
         this.list(res, flag);
       } else if (delta > this.startX) {
         const wi = getComputedStyle(document.querySelector('.slider')).width;
         const res = wi.slice(0, -2) / 0.9;
         document.querySelector('.slider').scrollBy(`${-res}`, 0);
-
-        if (this.count > 1) {
-          // document.querySelector('.round').innerHTML = `${this.count -= 1}`;
-        }
-
         const flag = 'minus';
         this.list(res, flag);
       }
-
-      console.log('...../.....');
     });
 
     document.querySelector('.slider-container').addEventListener('touchstart', (e) => {

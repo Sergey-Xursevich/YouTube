@@ -59,3 +59,10 @@ describe('AppModel.extractClipNames', () => {
     });
   });
 });
+
+describe('AppModel constructor is an Array', () => {
+  it('Should be an instance of Array', () => {
+    const appModel = new AppModel({});
+    expect(appModel.state).toStrictEqual({});
+  });
+});
